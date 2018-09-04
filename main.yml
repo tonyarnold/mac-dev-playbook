@@ -2,8 +2,16 @@
 - hosts: all
   connection: local
 
+  vars_prompt:
+    - name: mas_email
+      prompt: "Mac App Store login email"
+      private: no
+
   vars_files:
     - default.config.yml
+
+  vars:
+    - mas_signin_dialog: yes
 
   pre_tasks:
     - include_vars: "{{ item }}"
