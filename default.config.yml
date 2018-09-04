@@ -16,7 +16,6 @@ homebrew_installed_packages:
   - git
   - gnupg
   - goenv
-  - gpg-agent
   - keychain
   - lazygit
   - mas
