@@ -1,4 +1,3 @@
----
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
@@ -72,7 +71,7 @@ homebrew_cask_apps:
   - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: 
+mas_installed_apps:
   - { id: 497799835, name: "Xcode" }
   - { id: 1107421413, name: "1Blocker" }
   - { id: 1333542190, name: "1Password" }
@@ -96,19 +95,23 @@ mas_installed_apps:
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
 # installed, eg. through homebrew.
-composer_packages: []
+composer_packages:
+  []
   # - name: drush
   #   state: present # present/absent, default: present
   #   version: "^8.1" # default: N/A
-gem_packages: []
+gem_packages:
+  []
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
+npm_packages:
+  []
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
-pip_packages: []
+pip_packages:
+  []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
