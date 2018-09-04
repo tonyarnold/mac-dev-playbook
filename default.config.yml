@@ -2,47 +2,35 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
-configure_sudoers: yes
 configure_terminal: yes
-configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/tonyarnold/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
-dotfiles_files:
-  - .bash_profile
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
+dotfiles_repo_local_destination: ~/.dotfiles
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
+  - bat
+  - carthage
+  - cmake
+  - fish
   - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
+  - gnupg
+  - goenv
+  - gpg-agent
+  - keychain
+  - lazygit
+  - mas
+  - mergepbx
+  - neovim
+  - ninja
+  - nodenv
+  - pinentry
+  - pinentry-mac
+  - pyenv
+  - rbenv
+  - swiftformat
+  - swiftlint
   - wget
-  - wrk
 
 homebrew_taps:
   - homebrew/core
@@ -50,28 +38,62 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
+  - acorn
+  - android-studio
+  - charles
+  - dash
   - docker
   - dropbox
   - firefox
   - google-chrome
-  - handbrake
-  - licecap
-  - limechat
-  - macvim
-  - sequel-pro
-  - skitch
-  - slack
-  - sublime-text
+  - iconjar
+  - kaleidoscope
+  - keybase
+  - macdown
+  - moom
+  - omnigraffle
+  - pacifist
+  - paintcode
+  - paparazzi
+  - paw
+  - reggy
+  - reveal
+  - simple-comic
+  - sketch
+  - skype
+  - superduper
+  - tableplus
+  - textexpander
+  - tower
+  - transmission
   - transmit
+  - twist
   - vagrant
+  - vmware-fusion
+  - visual-studio-code
+  - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
-mas_password: ""
-
-osx_script: "~/.osx --no-restart"
+mas_installed_apps: 
+  - { id: 497799835, name: "Xcode" }
+  - { id: 1107421413, name: "1Blocker" }
+  - { id: 1333542190, name: "1Password" }
+  - { id: 1287445660, name: "Agenda" }
+  - { id: 1319778037, name: "iStat Menus" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 441258766, name: "Magnet" }
+  - { id: 1289197285, name: "MindNode 5" }
+  - { id: 419330170, name: "Moom" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 967805235, name: "Paste" }
+  - { id: 1289583905, name: "Pixelmator Pro" }
+  - { id: 880001334, name: "Reeder 3" }
+  - { id: 803453959, name: "Slack" }
+  - { id: 413965349, name: "Soulver" }
+  - { id: 425424353, name: "The Unarchiver" }
+  - { id: 904280696, name: "Things 3" }
+  - { id: 1384080005, name: "Tweetbot 3" }
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are

@@ -1,0 +1,11 @@
+---
+- name: Ensure dotfiles repository is cloned locally.
+  git:
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ dotfiles_repo_local_destination }}"
+    accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
+  become: no
+
+- name: Run dotfiles installation script.
+  shell: "{{ dotfiles_repo_local_destination }}/install"
+  changed_when: false

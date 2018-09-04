@@ -1,0 +1,18 @@
+---
+- name: Check that Fish shell is installed.
+  shell: command -v fish >/dev/null 2>&1
+  register: fish_shell_exists
+  ignore_errors: yes
+
+- name: Download Fishshell Framework installer.
+  get_url: 
+    url: https://get.oh-my.fish
+    dest: $TMPDIR/oh-my-fish-install
+  when: fish_shell_exists
+
+- name: Install Fishshell Framework.
+  shell: fish $TMPDIR/oh-my-fish-install --noninteractive
+  when: fish_shell_exists
+
+- name: Install Fishshell Framework bundle.
+  shell: fish omf install

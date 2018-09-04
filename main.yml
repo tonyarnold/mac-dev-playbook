@@ -14,9 +14,6 @@
   roles:
     - role: geerlingguy.homebrew
       tags: ['homebrew']
-    - role: geerlingguy.dotfiles
-      when: configure_dotfiles
-      tags: ['dotfiles']
     - role: geerlingguy.mas
       when: mas_installed_apps
       tags: ['mas']
@@ -24,15 +21,12 @@
   tasks:
     - include_tasks: tasks/ansible-setup.yml
 
-    - include_tasks: tasks/sudoers.yml
-      when: configure_sudoers
-
     - include_tasks: tasks/terminal.yml
       when: configure_terminal
 
-    - include_tasks: tasks/osx.yml
-      when: configure_osx
-      tags: ['osx']
+    - include_tasks: tasks/dotfiles.yml
+      when: configure_dotfiles
+      tags: ['dotfiles']
 
     - include_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
