@@ -11,6 +11,8 @@ mas_installed_apps:
   - { id: 497799835, name: "Xcode" }
   - { id: 1107421413, name: "1Blocker" }
   - { id: 1333542190, name: "1Password" }
+  - { id: 824171161, name: "Affinity Designer" }
+  - { id: 824183456, name: "Affinity Photo" }
   - { id: 1287445660, name: "Agenda" }
   - { id: 1319778037, name: "iStat Menus" }
   - { id: 409183694, name: "Keynote" }
