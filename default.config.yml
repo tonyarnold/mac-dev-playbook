@@ -86,7 +86,6 @@ homebrew_cask_apps:
   - transmission
   - transmit
   - twist
-  - vagrant
   - vmware-fusion
   - visual-studio-code
   - vlc
