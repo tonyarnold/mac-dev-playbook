@@ -7,28 +7,28 @@ dotfiles_repo: https://github.com/tonyarnold/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/.dotfiles
 
-mas_installed_apps:
-  - { id: 497799835, name: "Xcode" }
-  - { id: 1107421413, name: "1Blocker" }
-  - { id: 1333542190, name: "1Password" }
-  - { id: 824171161, name: "Affinity Designer" }
-  - { id: 824183456, name: "Affinity Photo" }
-  - { id: 1287445660, name: "Agenda" }
-  - { id: 1319778037, name: "iStat Menus" }
-  - { id: 409183694, name: "Keynote" }
-  - { id: 441258766, name: "Magnet" }
-  - { id: 1289197285, name: "MindNode 5" }
-  - { id: 419330170, name: "Moom" }
-  - { id: 409203825, name: "Numbers" }
-  - { id: 409201541, name: "Pages" }
-  - { id: 967805235, name: "Paste" }
-  - { id: 1289583905, name: "Pixelmator Pro" }
-  - { id: 880001334, name: "Reeder 3" }
-  - { id: 803453959, name: "Slack" }
-  - { id: 413965349, name: "Soulver" }
-  - { id: 425424353, name: "The Unarchiver" }
-  - { id: 904280696, name: "Things 3" }
-  - { id: 1384080005, name: "Tweetbot 3" }
+#mas_installed_apps:
+#  - { id: 497799835, name: "Xcode" }
+#  - { id: 1107421413, name: "1Blocker" }
+#  - { id: 1333542190, name: "1Password" }
+#  - { id: 824171161, name: "Affinity Designer" }
+#  - { id: 824183456, name: "Affinity Photo" }
+#  - { id: 1287445660, name: "Agenda" }
+#  - { id: 1319778037, name: "iStat Menus" }
+#  - { id: 409183694, name: "Keynote" }
+#  - { id: 441258766, name: "Magnet" }
+#  - { id: 1289197285, name: "MindNode 5" }
+#  - { id: 419330170, name: "Moom" }
+#  - { id: 409203825, name: "Numbers" }
+#  - { id: 409201541, name: "Pages" }
+#  - { id: 967805235, name: "Paste" }
+#  - { id: 1289583905, name: "Pixelmator Pro" }
+#  - { id: 880001334, name: "Reeder 3" }
+#  - { id: 803453959, name: "Slack" }
+#  - { id: 413965349, name: "Soulver" }
+#  - { id: 425424353, name: "The Unarchiver" }
+#  - { id: 904280696, name: "Things 3" }
+#  - { id: 1384080005, name: "Tweetbot 3" }
 
 homebrew_installed_packages:
   - bat
